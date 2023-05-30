@@ -24,7 +24,6 @@ def generate_launch_description():
                         get_package_share_directory('gazebo_ros'), 'launch','gazebo.launch.py')])
     )
 
-
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'my_bot'],
