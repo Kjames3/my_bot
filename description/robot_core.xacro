@@ -24,14 +24,12 @@
     </material>
 
     <!-- BASE LINK -->
-
     <link name="base_link">
 
     </link>
 
 
     <!-- CHASSIS LINK -->
-
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
@@ -62,7 +60,6 @@
     </gazebo>
     
     <!-- LEFT WHEEL LINK -->
-
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
@@ -93,7 +90,6 @@
 
 
     <!-- RIGHT WHEEL LINK -->
-
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
@@ -124,7 +120,6 @@
 
 
     <!-- CASTER WHEEL LINK -->
-
     <joint name="caster_wheel_joint" type="fixed">
         <parent link="chassis"/>
         <child link="caster_wheel"/>
